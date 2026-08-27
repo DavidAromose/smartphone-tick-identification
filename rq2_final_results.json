@@ -1,0 +1,11 @@
+{
+  "winner_model": "EfficientNet-B0",
+  "baseline_macro_f1": 0.716,
+  "dynamic_int8_retention_pct": 99.9,
+  "tflite_float32_macro_f1": 0.708,
+  "tflite_float32_size_mb": 16.06,
+  "tflite_float16_size_mb": 8.08,
+  "compression_float16": "2x on-disk (16.06 -> 8.08 MB)",
+  "notes": "TFLite conversion via PyTorch->ONNX->onnx2tf verified faithful for float32 (macro-F1 within 0.01 of baseline). Float16 halves on-disk size. Full int8 deferred: onnx2tf calibration and a float16 runtime-kernel incompatibility in Colab prevented on-device verification; float16 also preferable for preserving rare-class accuracy. Deployment quantisation to be finalised in the app phase.",
+  "status": "RQ2 CLOSED"
+}

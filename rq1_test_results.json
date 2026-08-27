@@ -1,0 +1,12 @@
+{
+  "test_macro_f1": 0.6597457394938442,
+  "ci_low": 0.6054325402964295,
+  "ci_high": 0.705357466852053,
+  "per_class_recall": {
+    "dermacentor_reticulatus": 0.9142857142857143,
+    "hyalomma_marginatum": 0.6851851851851852,
+    "ixodes_hexagonus": 0.30434782608695654,
+    "ixodes_ricinus": 0.9140022050716649,
+    "rhipicephalus_sanguineus": 0.47794117647058826
+  }
+}
